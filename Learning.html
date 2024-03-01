@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <link rel="stylesheet" href="Learning.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="mainContent card">
+            <h2>Bookshelf Apps</h2>
+            <form id="inputBook">
+                <div class="userInput">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+                <div class="userInput">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+                <div class="userInput">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="date" name="date" min="1500" max="2026" required>
+                </div>
+                <hr>
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak</button>
+            </form>
+        </div>
+        <div class="bookShelf card">
+            <h2>Belum selesai dibaca</h2>
+            <section id="incompletedBookList" class="bookList">
+                
+            </section>
+        </div>
+        <div class="bookShelf card">
+            <h2>Selesai dibaca</h2>
+            <section id="completedBookList" class="bookList">
+                
+            </section>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

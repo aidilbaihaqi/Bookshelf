@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("img/pastel.jpg") center;
+    font-family: 'Lato', sans-serif;
+}
+hr {
+    border: 2px solid #F38BA0;
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+}
+.container {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.mainContent h2 {
+    color: #F38BA0;
+}
+.mainContent form .userInput {
+    margin: 10px 0;
+}
+.mainContent form button {
+    background-color: #F38BA0;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    transition: ease .4s;
+}
+.mainContent form button:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+}
+.mainContent form .userInput input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.mainContent form .userInput label {
+    color: #F38BA0;
+    font-weight: bold;
+}
+.bookShelf {
+    margin-top: 16px;
+    padding: 16px;
+}
+.bookShelf > h2 {
+    color: #F38BA0;
+}
+.bookShelf > .bookList {
+    padding: 16px;
+}
+.bookShelf > .bookList > .fas {
+    width: 5px;
+}
+.bookShelf > .bookList > .bookItem {
+    padding: 8px 16px 16px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    background-color: white;
+    margin: 10px 0;
+    overflow: auto;
+    transition: ease .3s;
+}
+.bookShelf > .bookList > .bookItem > .title {
+    float: left;
+}
+.bookShelf > .bookList > .bookItem:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.6);
+    border: 0;
+    border-radius: 3px;
+}
+.bookShelf > .bookList > .bookItem > h3, p {
+    margin: 8px 0;
+}
+.bookShelf > .bookList > .bookItem > button {
+    border: 0;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease .3s;
+    float: right;
+}
+.bookShelf > .bookList > .bookItem > button:hover {
+    background-color: #FFBCBC;
+    color: black;
+}
